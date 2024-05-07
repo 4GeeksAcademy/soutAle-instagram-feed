@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index-style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <!--HEADER.TITULO: EL TITULO (H1) Y DENTRO DE TITULO ICONO DEL IG-->
+    <header class="titulo">
+        <h1><i class="fa-brands fa-instagram"></i>Instagram</h1>
+    </header>
+
+    <!--DIV.CONTAINER: DENTRO TENEMOS TODA LA INFORMACION DEL USUARIO-->
+    <div class="post">
+
+        <!--DIV.USUARIO: FOTO, NOMBRE DEL USUARIO (HYPERLINK A SU PAGINA EN LA MISMA VENTANA) Y
+            DIV.MAS-OPCINES ("BOTON" DE REPORTE)-->
+        <div class="post-header">
+            <img src="https://picsum.photos/630?random=1" alt="">
+            <a href="https://4geeks.com/" target="_self">Alejandro</a>
+            <span>· 1h</span>
+            <div class="mas-opciones">
+                <p class="info" title="Mas Opciones">...</p>
+            </div>
+        </div>
+
+        <!--LA FOTO POSTEADA-->
+        <div class="post-image">
+            <img src="https://picsum.photos/630?random=2" alt="">
+        </div>
+
+        <!--DIV.POST-FOOTER: DENTRO TENEMOS LA CANTIDAD DE LIKES, 
+                NOMBRE DEL USUARIO (HYPERLINK A SU PAGINA EN LA MISMA VENTANA),
+                LOS COMENTARIOS DEL POST Y UN INPUT DE TIPO TEXT CON PLACEHOLDER-->
+        <div class="post-footer">
+            <div class="post-icons">
+                <i class="fa-regular fa-heart" title="Me gusta"></i>
+                <i class="fa-regular fa-comment" title="Comentar"></i>
+                <i class="fa-regular fa-paper-plane" title="Compartir publicacion"></i>
+                <i class="fa-regular fa-bookmark" title="Guardar"></i>
+            </div>
+
+            <p>3.765 Me gusta</p>
+            <a href="https://4geeks.com/" target="_self">Alejandro</a>
+            <p>ver los 654 comentarios</p>
+            <input type="text" placeholder="Añade un comentario...">
+        </div>
+
+    </div>
+
+    <!--LO MISMO PARA UN USUARIO DIFERENTE-->
+
+    <div class="post">
+        <div class="post-header">
+            <img src="https://picsum.photos/630?random=3" alt="">
+            <a href="https://4geeks.com/" target="_self">Elisabeth</a>
+            <span>· 10h</span>
+            <div class="mas-opciones">
+                <p class="info" title="Mas Opciones">...</p>
+            </div>
+        </div>
+
+        <div class="post-image">
+            <img src="https://picsum.photos/630?random=4" alt="">
+        </div>
+
+        <div class="post-footer">
+            <div class="post-icons">
+                <i class="fa-regular fa-heart" title="Me gusta"></i>
+                <i class="fa-regular fa-comment" title="Comentar"></i>
+                <i class="fa-regular fa-paper-plane" title="Compartir publicacion"></i>
+                <i class="fa-regular fa-bookmark" title="Guardar"></i>
+            </div>
+            <p>5.679 Me gusta</p>
+            <a href="https://4geeks.com/" target="_self">Elisabeth</a>
+            <p>ver los 341 comentarios</p>
+            <input type="text" placeholder="Añade un comentario...">
+        </div>
+
+    </div>
+
+    <!--LO MISMO PARA UN USUARIO DIFERENTE-->
+
+    <div class="post">
+
+        <div class="post-header">
+            <img src="https://picsum.photos/630?random=5" alt="">
+            <a href="https://4geeks.com/" target="_self">Pedro</a>
+            <span> · 1 dia</span>
+            <div class="mas-opciones">
+                <p class="info" title="Mas Opciones">...</p>
+            </div>
+        </div>
+
+        <div class="post-image">
+            <img src="https://picsum.photos/630?random=6" alt="">
+        </div>
+
+        <div class="post-footer">
+            <div class="post-icons">
+                <i class="fa-regular fa-heart" title="Me gusta"></i>
+                <i class="fa-regular fa-comment" title="Comentar"></i>
+                <i class="fa-regular fa-paper-plane" title="Compartir publicacion"></i>
+                <i class="fa-regular fa-bookmark" title="Guardar"></i>
+            </div>
+            <p>4.754 Me gusta</p>
+            <a href="https://4geeks.com/" target="_self">Pedro</a>
+            <p>ver los 259 comentarios</p>
+            <input type="text" placeholder="Añade un comentario...">
+        </div>
+
+    </div>
+
+    <!--FOOTER.MAIN-FOOTER CON UNORDERED LIST QUE CONTIENE LOS ICONOS DE MIS REDES SOCIALES
+        Y UNA P CON LA "FIRMA", EL BOOTCAMP, EL COPYRIGTH XD Y EL AÑO-->
+    <footer class="main-footer">
+        <ul>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+        </ul>
+        <p>Made by alex at 4geeksAcademy &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/*BODY: MAX-WITH: ESTABLECE EL ANCHO MAXIMO DE UN ELEMENTO
+        (EN ESTE CASO PARA QUE LAS IMAGENES Y EL CONTAINER SE AJUSTEN CORRECTAMENTE)
+        WIDTH: DE 100% PARA QUE SE AJUSTE A TODO EL CONTENEDOR 
+        MARGIN: AUTO PARA CENTRAR EL CONTENDINO;
+        BACKGROUND-COLOR: PARA DAR ESTILO AL FONDO*/
+        
+        body{
+            max-width: 630px;
+            width: 100%;
+            margin: auto;
+            background-color:rgb(241, 233, 221);
+        }
+        span{
+            font-size: 12px;
+            color: darkgray;
+            font-weight: bold;
+        }
+        /*.POST: BOX-SHADOW: MAS O MENOS A BOLEO, AUN NO ENTIENDO MUCHO COMO FUNCIONA.
+                     BORDER-RADIUS: PARA DAR UN POCO DE FORMA A LAS ESQUINAS DE LOS POSTS
+                     FONT-FAMILY: EL ESTILO DE LETRA MAS PARECIDO A IG QUE ENCONTRE*/
+        .post{
+            background-color: #FFFFFF;
+            margin: auto;
+            margin-bottom: 50px;
+            box-shadow: 1px 4px 7px;
+            border-radius: 3px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        /*.TITUTLO (H1 E ICONO): GRADIENTE CON LOS "COLORES DE IG"  Y UN ESTILO DE LETRA SIMILAR
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent; AJUSTAN EL COLOR ESPECIFICAMENTE AL TEXT*/
+        .titulo{
+            text-align: center;
+            font-size: 50px;
+            font-family: "Dancing Script",cursive;
+            text-shadow: 8px 8px 8px rgb(128, 125, 125);
+            background-color: #FFFFFF;
+            background-image: linear-gradient( 890deg,
+             rgb(64, 93, 230), rgb(88, 81, 219),rgb(131,58,180), 
+             rgb(193,53,132),rgb(225,48,108),rgb(253,29,29),
+             rgb(245,96,64),rgb(247,119,55),rgb(255,220,128));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+        }
+        /*HIJOS IMG DE LA CLASE .POST-HEADER: LE DAMOS TAMAÑO Y UNA FORMA REDONDA.
+          AL TRATARSE DE HYPERLINKS CON CURSOR POINTER HACEMOS QUE APAREZCA LA MANO*/
+        .post-header>img{
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 6px;
+        }
+        /*HIPERLINKS: CON TEXT-DECORATION NONE LE QUITAMOS EL ESTILO POR DEFECTO
+          UN COLOR PARECIDO A IG Y EN NEGRITA */
+        a{
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+        
+        }
+        /*ALINEAMOS EL NOMBRE Y LA IMAGEN DEL USUARIO*/
+        .post-header{
+            display: flex;
+            align-items: center;
+        }
+        /*LOS TRES PUNTOS DE LAS OPCIONES CON EL POINTER MARGIN LEFT PARA AJUSTARLO A LA DERECHA Y TAMAÑO*/
+        .mas-opciones p{
+            margin-left: 420px;
+            font-size: 25px;
+            cursor: pointer;
+            
+        }
+        /*AJUSTAMOS EL MARGIN A LA DERECHA Y EL TAMAÑO PARA .FA REGULAR QUE SON HIJOS DE .ICONOS*/
+        .post-icons>.fa-regular{
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        /*AJUSTAMOS EL MARGEN A LA IZQ. DEL LIKE*/
+        .fa-heart{
+            margin-left: 5px;
+        }
+        
+        /*CON :HOVER AL PASAR EL CURSON ADEMAS DE LA MANO CAMBIAMOS EL COLOR A UN GRIS CLARO*/
+        .fa-regular:hover{
+            color: darkgray;
+            cursor: pointer;
+        }
+        .fa-bookmark{
+            padding-left: 460px;
+        }
+        /*AQUI AJUSTAMOS EN COLUMNAS TODO EL CONTENIDO DE .POST-FOOTER, 
+        ESTABLECEMOS EL MARGEN Y EL TAMAÑO*/
+        .post-footer, a, p, input{
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+        /*CAMBIAMOS EL COLOR DE LA 4ta P(VER LOS COMENTARIOS), 
+        CON UN HYPERLINK (a) NO ME DABA EL ESTILO DESEADO Y EL CURSOR POINTER*/
+        .post-footer p:nth-child(4){
+            color: darkgray;
+            cursor: pointer;
+        }
+        /*IGUl QUE EL ANTERIOR PERO PARA EL LA 2nda P(LOS LIKES)*/
+        .post-footer p:nth-child(2){
+            color: #333333;
+            font-weight: bold;
+        }
+        /*INPUT SIN BORDER, Y CON EL input[type="text"]:focus 
+        NOS ASEGURAMOS QUE CUANDO EL USUARIO ESCRIBRA NO APAREZCA EL BORDE */
+        input, input[type="text"]:focus{
+            border: none;
+            outline: none;
+            padding-bottom: 15px;
+        }
+        /*HIJOS UL DE LA CLASE .MAIN-FOOTER, LO CENTRAMOS CON DISPLAY FLEX Y JUSTIFY-CONTENT 
+        Y AÑADIMOS LIST-STYLE-TYPE EN NONE PARA QUE NO TENGA ESTILO*/
+        .main-footer>ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            font-size: 35px;
+            text-shadow: 4px 4px 4px rgb(128, 125, 125);
+            
+        }
+        /*ICONOS DE REDES SOCIALES CON EL MARGEN AJUSTADO*/
+        .fa-brands{
+            margin: 20px  
+        }
+        /*AQUI CENTRAMOS LA FIRMA, DAMOS TAMAÑO AL TEXTO Y EL SOMBREADO.*/
+        .main-footer p{
+            text-align: center;
+            font-size: 19px;
+            text-shadow: 4px 4px 3px rgb(128, 125, 125);
+            margin-left: 55px;
+            padding-bottom: 40px;
+        }
