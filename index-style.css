@@ -90,7 +90,7 @@
             cursor: pointer;
         }
         .fa-bookmark{
-            padding-left: 460px;
+            margin-left: 460px;
         }
         /*AQUI AJUSTAMOS EN COLUMNAS TODO EL CONTENIDO DE .POST-FOOTER, 
         ESTABLECEMOS EL MARGEN Y EL TAMAÑO*/
